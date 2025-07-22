@@ -37,7 +37,7 @@ const Resetpwd = () => {
         const storedemail = JSON.parse(localStorage.getItem("email"));
         const { email } = (storedemail);
         console.log('email', email);
-        const response = await fetch(`http://localhost:5000/updatepwd/${email}`, {
+        const response = await fetch(`http://localhost:5000/user/updatepwd/${email}`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

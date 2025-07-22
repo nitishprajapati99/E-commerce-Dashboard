@@ -12,7 +12,7 @@ const ProductList = () => {
     }, [])
     //function for get the product
     const getProducts = async () => {
-        let result = await fetch('http://localhost:5000/product-list',{
+        let result = await fetch('http://localhost:5000/product/product-list',{
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
@@ -22,7 +22,7 @@ const ProductList = () => {
     }
     //function for delete the product
     const deleteProduct = async (id) => {
-        let result = await fetch(`http://localhost:5000/delete-product/${id}`, {
+        let result = await fetch(`http://localhost:5000/product/delete-product/${id}`, {
             headers:{
             authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             },
@@ -39,7 +39,7 @@ const ProductList = () => {
     const SearchHandle = async (search) => {
         const key = search.target.value;
         if (key) {
-            let result = await fetch(`http://localhost:5000/search-product/${key}`,{
+            let result = await fetch(`http://localhost:5000/product/search-product/${key}`,{
                 method:'GET',
                 headers:{
                     Authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`

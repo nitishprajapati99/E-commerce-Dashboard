@@ -42,7 +42,7 @@ const Login = () => {
       password: password
     }
 
-    let result = await fetch('http://localhost:5000/login', {
+    let result = await fetch('http://localhost:5000/user/login', {
       method: 'POST',
       body: JSON.stringify(loginData),
       headers: {

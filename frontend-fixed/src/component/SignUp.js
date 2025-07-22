@@ -50,7 +50,7 @@ const Signup = () => {
         });
 
         try {
-            let result = await fetch('http://localhost:5000/register', {
+            let result = await fetch('http://localhost:5000/user/register', {
                 method: 'post',
                 body: JSON.stringify(data),
                 headers: {

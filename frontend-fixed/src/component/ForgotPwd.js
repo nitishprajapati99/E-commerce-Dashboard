@@ -35,7 +35,7 @@ const Forgotpwd = () => {
 
 
         try {
-            let response = await fetch('http://localhost:5000/forgotpwd', {
+            let response = await fetch('http://localhost:5000/user/forgotpwd', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"

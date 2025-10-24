@@ -118,12 +118,12 @@ INPUT Field CSS
 Product CSS
 */
 
-.product-list {
+.container {
   text-align: center;
   margin-top: 10px;
 }
 
-.product-list ul li {
+.container ul li {
   display: inline-block;
   border: 1px, solid, rgb(163, 219, 247);
   ;
@@ -132,9 +132,10 @@ Product CSS
 
 }
 
-.product-list ul {
+.container ul {
   margin: 0px;
 }
+  
 
 /*
  Buttons CSS

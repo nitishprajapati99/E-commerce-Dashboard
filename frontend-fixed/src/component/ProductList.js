@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import {useSnackbar} from '../Context/SnackbarContext';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 const ProductList = () => {
     const [products, setProducts] = useState([]);
     const {showSnackbar} = useSnackbar();
@@ -62,7 +64,7 @@ const ProductList = () => {
     return (
         <body >
             
-        <div className="product-list" style={{backgroundColor:"white"}}>
+        <div className="container" style={{backgroundColor:"white"}}>
              <input id="search-box" type="text" placeholder='Search For Product' onChange={SearchHandle} />
             <h3>Product List</h3>
             <ul>

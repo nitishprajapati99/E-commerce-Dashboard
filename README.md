@@ -1,6 +1,6 @@
  E-Commerce Dashboard
 
-A full-stack analytics dashboard that visualizes key business metrics like sales, orders, revenue, and customer insights for an e-commerce platform.
+A full-stack analytics dashboard that visualizes key business metrics like sales, orders, revenue, and this dashboard for admin and works fo the website insights for an e-commerce platform.
 Built with a focus on data-driven decisions, responsive UI, and scalable architecture.
 
  Features
